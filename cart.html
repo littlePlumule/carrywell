@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/typography.css">
+  <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylesheet" href="./css/cart.css">
+  <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
+</head>
+<body>
+  <header class="main-header">
+    <div class="container-large">
+      <h1 class="main-header__logo">
+        <a href="./index.html" class="main-header__logo-link hl2">CarryWell</a>
+      </h1>
+      <nav class="main-header__navbar">
+        <div class="main-header__menu">
+          <iconify-icon icon="material-symbols:menu" class="main-header__menu-icon hl3"></iconify-icon>
+        </div>
+        <ul class="main-header__nav-list">
+          <li class="main-header__nav-item">
+            <a href="./index.html" class="main-header__nav-link hl5">首頁</a>
+          </li>
+          <li class="main-header__nav-item">
+            <a href="./product.html" class="main-header__nav-link hl5">商品列表</a>
+          </li>
+          <li class="main-header__nav-item">
+            <a href="./about-us.html" class="main-header__nav-link hl5">品牌介紹</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="main-header__icon-list">
+        <li class="main-header__icon-item">
+          <a href="./favorite.html" class="main-header__icon-link">
+            <iconify-icon icon="mdi:heart-outline" class="main-header__icon hl5"></iconify-icon>
+          </a>
+        </li>
+        <li class="main-header__icon-item main-header__icon-item--active">
+          <a href="./cart.html" class="main-header__icon-link">
+            <iconify-icon icon="uil:cart" class="main-header__icon hl5"></iconify-icon>
+          </a>
+        </li>
+        <li class="main-header__icon-item">
+          <a href="./login.html" class="main-header__icon-link">
+            <iconify-icon icon="gg:profile" class="main-header__icon hl5"></iconify-icon>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="banner container-large">
+    <h2 class="banner__title hl2">Cart</h2>
+  </div>
+  
+  <main class="cart container">
+    <nav class="step">
+      <ul class="step__list">
+        <li class="step__item step__item--active hl4">
+          <span class="step__number">1</span> 購物車
+        </li>
+        <li class="step__item hl4">
+          <span class="step__number">2</span> 填寫資料
+        </li>
+        <li class="step__item hl4">
+          <span class="step__number">3</span> 完成訂單
+        </li>
+      </ul>
+    </nav>
+      
+    <div class="cart__wrap">
+      <section class="cart__content">
+        <header class="cart__header">
+          <h3 class="cart__headline hl5">刪除</h3>
+          <h3 class="cart__headline hl5">產品</h3>
+          <h3 class="cart__headline hl5">數量</h3>
+          <h3 class="cart__headline hl5">價格</h3>
+        </header>
+        <ul class="cart__list">
+          <li class="cart__item">
+            <button class="cart__item-remove">
+              <iconify-icon icon="mdi:remove" class="cart__remove-icon hl5"></iconify-icon>
+            </button>
+            <div class="cart__item-content">
+              <div class="cart__item-picture">
+                <img src="./image/long-wallet.png" alt="long wallet">
+              </div>
+              <h3 class="cart__item-name hl5">男士復古真皮錢包</h3>
+            </div>
+            <div class="cart__item-quantity">
+              <button class="cart__quantity-button hl5">-</button>
+              <input type="number" value="1" min="1" class="cart__quantity-input hl5">
+              <button class="cart__quantity-button hl5">+</button>
+            </div>
+            <span class="cart__item-price hl5">800</span>
+          </li>
+        </ul>
+      </section>
+
+      <aside class="cart__summary">
+        <h3 class="cart__summary-title hl5">訂單摘要</h3>
+        <dl class="cart__summary-list">
+          <div class="cart__summary-item">
+            <dt class="cart__summary-label hl7">商品總計</dt>
+            <dd class="cart__summary-price hl7">800</dd>
+          </div>
+          <div class="cart__summary-item">
+            <dt class="cart__summary-label hl7">運費總計</dt>
+            <dd class="cart__summary-price hl7">0</dd>
+          </div>
+          <div class="cart__summary-item cart__summary-total">
+            <dt class="cart__summary-label hl6">總共金額</dt>
+            <dd class="cart__summary-price hl6">800</dd>
+          </div>
+        </dl>
+        <a href="./checkout.html" class="cart__checkout hl5">前往結帳</a>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="main-footer">
+    <div class="container-large">
+      <div class="main-footer__wrap">
+        <nav class="main-footer__navbar">
+          <ul class="main-footer__nav-list">
+            <li class="main-footer__nav-item">
+              <a href="#" class="main-footer__nav-link hl6">常見問題</a>
+            </li>
+            <li class="main-footer__nav-item">
+              <a href="#" class="main-footer__nav-link hl6">品牌介紹</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="main-footer__terms">
+          <ul class="main-footer__terms-list">
+            <li class="main-footer__terms-item">
+              <a href="#" class="main-footer__terms-link hl6">隱私權政策</a>
+            </li>
+            <li class="main-footer__terms-item">
+              <a href="#" class="main-footer__terms-link hl6">免責政策</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="main-footer__wrap main-footer__wrap--down">
+        <small class="main-footer__copyright hl7">&copy; 2025 CarryWell. All rights reserved.</small>
+        <ul class="main-footer__follow-list">
+          <li class="main-footer__follow-item">
+            <a href="#" class="main-footer__follow-link">
+              <iconify-icon icon="skill-icons:github-dark" class="main-footer__icon hl5"></iconify-icon>
+            </a>
+          </li>
+          <li class="main-footer__follow-item">
+            <a href="#" class="main-footer__follow-link">
+              <iconify-icon icon="skill-icons:instagram" class="main-footer__icon hl5"></iconify-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
