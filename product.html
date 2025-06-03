@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/typography.css">
+  <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylesheet" href="./css/product.css">
+  <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
+</head>
+<body>
+  <header class="main-header">
+    <div class="container-large">
+      <h1 class="main-header__logo">
+        <a href="./index.html" class="main-header__logo-link hl2">CarryWell</a>
+      </h1>
+      <nav class="main-header__navbar">
+        <div class="main-header__menu">
+          <iconify-icon icon="material-symbols:menu" class="main-header__menu-icon hl3"></iconify-icon>
+        </div>
+        <ul class="main-header__nav-list">
+          <li class="main-header__nav-item">
+            <a href="./index.html" class="main-header__nav-link hl5">首頁</a>
+          </li>
+          <li class="main-header__nav-item main-header__nav-item--active">
+            <a href="./product.html" class="main-header__nav-link hl5">商品列表</a>
+          </li>
+          <li class="main-header__nav-item">
+            <a href="./about-us.html" class="main-header__nav-link hl5">品牌介紹</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="main-header__icon-list">
+        <li class="main-header__icon-item">
+          <a href="./favorite.html" class="main-header__icon-link">
+            <iconify-icon icon="mdi:heart-outline" class="main-header__icon hl5"></iconify-icon>
+          </a>
+        </li>
+        <li class="main-header__icon-item">
+          <a href="./cart.html" class="main-header__icon-link">
+            <iconify-icon icon="uil:cart" class="main-header__icon hl5"></iconify-icon>
+          </a>
+        </li>
+        <li class="main-header__icon-item">
+          <a href="./login.html" class="main-header__icon-link">
+            <iconify-icon icon="gg:profile" class="main-header__icon hl5"></iconify-icon>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="banner container-large">
+    <h2 class="banner__title hl2">Product</h2>
+  </div>
+  
+  <main class="product-container container">
+    <aside class="product-sidebar">
+      <h3 class="product-sidebar__title hl5">商品分類</h3>
+      <ul class="product-sidebar__list">
+        <li class="product-sidebar__item product-sidebar__item--active">
+          <a href="#" class="product-sidebar__link hl7">熱門商品</a>
+        </li>
+        <li class="product-sidebar__item">
+          <a href="#" class="product-sidebar__link hl7">MEN</a>
+        </li>
+        <li class="product-sidebar__item">
+          <a href="#" class="product-sidebar__link hl7">WOMEN</a>
+        </li>
+        <li class="product-sidebar__item">
+          <a href="#" class="product-sidebar__link hl7">皮夾 / 短夾</a>
+        </li>
+        <li class="product-sidebar__item">
+          <a href="#" class="product-sidebar__link hl7">皮夾 / 中夾</a>
+        </li>
+        <li class="product-sidebar__item">
+          <a href="#" class="product-sidebar__link hl7">皮夾 / 長夾</a>
+        </li>
+        <li class="product-sidebar__item">
+          <a href="#" class="product-sidebar__link hl7">零錢包</a>
+        </li>
+      </ul>
+    </aside>
+
+    <section class="product">
+      <header class="product__header">
+        <h3 class="product__headline hl4">熱門商品</h3>
+        <div class="product__sort">
+          <button class="product__sort-trigger">
+            <span class="product__sort-selected hl7">最新上架</span>
+            <span class="product__sort-arrow">
+              <iconify-icon icon="mingcute:down-line" class="product__sort-arrow-icon hl5"></iconify-icon>
+            </span>
+          </button>
+          <ul class="product__sort-option-list">
+            <li class="product__sort-option-item hl7">最新上架</li>
+            <li class="product__sort-option-item hl7">價格低到高</li>
+            <li class="product__sort-option-item hl7">價格高到低</li>
+          </ul>
+        </div>
+      </header>
+
+      <ul class="product__list">
+        <li class="product__item">
+          <a href="./product-detail.html" class="product__link">
+            <figure class="product__picture">
+              <img src="./image/long-wallet.png" alt="product image" class="product__image">
+              <button class="product__favorite">
+                <iconify-icon icon="mdi:heart-outline" class="product__favorite-icon hl5"></iconify-icon>
+              </button>
+              <button class="product__cart">
+                <span class="product__add-cart">
+                  加入購物車
+                </span>
+              </button>
+            </figure>
+            <div class="product__description">
+              <h3 class="product__title hl6">男士復古真皮錢包</h3>
+              <span class="product__price hl6">800</span>
+            </div>
+          </a>
+        </li>
+        <li class="product__item">
+          <a href="./product-detail.html" class="product__link">
+            <figure class="product__picture">
+              <img src="./image/long-wallet.png" alt="product image" class="product__image">
+              <button class="product__favorite">
+                <iconify-icon icon="mdi:heart-outline" class="product__favorite-icon hl5"></iconify-icon>
+              </button>
+              <button class="product__cart">
+                <span class="product__add-cart">
+                  加入購物車
+                </span>
+              </button>
+            </figure>
+            <div class="product__description">
+              <h3 class="product__title hl6">男士復古真皮錢包</h3>
+              <span class="product__price hl6">800</span>
+            </div>
+          </a>
+        </li>
+        <li class="product__item">
+          <a href="./product-detail.html" class="product__link">
+            <figure class="product__picture">
+              <img src="./image/long-wallet.png" alt="product image" class="product__image">
+              <button class="product__favorite">
+                <iconify-icon icon="mdi:heart-outline" class="product__favorite-icon hl5"></iconify-icon>
+              </button>
+              <button class="product__cart">
+                <span class="product__add-cart">
+                  加入購物車
+                </span>
+              </button>
+            </figure>
+            <div class="product__description">
+              <h3 class="product__title hl6">男士復古真皮錢包</h3>
+              <span class="product__price hl6">800</span>
+            </div>
+          </a>
+        </li>
+        <li class="product__item">
+          <a href="./product-detail.html" class="product__link">
+            <figure class="product__picture">
+              <img src="./image/long-wallet.png" alt="product image" class="product__image">
+              <button class="product__favorite">
+                <iconify-icon icon="mdi:heart-outline" class="product__favorite-icon hl5"></iconify-icon>
+              </button>
+              <button class="product__cart">
+                <span class="product__add-cart">
+                  加入購物車
+                </span>
+              </button>
+            </figure>
+            <div class="product__description">
+              <h3 class="product__title hl6">男士復古真皮錢包</h3>
+              <span class="product__price hl6">800</span>
+            </div>
+          </a>
+        </li>
+        <li class="product__item">
+          <a href="./product-detail.html" class="product__link">
+            <figure class="product__picture">
+              <img src="./image/long-wallet.png" alt="product image" class="product__image">
+              <button class="product__favorite">
+                <iconify-icon icon="mdi:heart-outline" class="product__favorite-icon hl5"></iconify-icon>
+              </button>
+              <button class="product__cart">
+                <span class="product__add-cart">
+                  加入購物車
+                </span>
+              </button>
+            </figure>
+            <div class="product__description">
+              <h3 class="product__title hl6">男士復古真皮錢包</h3>
+              <span class="product__price hl6">800</span>
+            </div>
+          </a>
+        </li>
+        <li class="product__item">
+          <a href="./product-detail.html" class="product__link">
+            <figure class="product__picture">
+              <img src="./image/long-wallet.png" alt="product image" class="product__image">
+              <button class="product__favorite">
+                <iconify-icon icon="mdi:heart-outline" class="product__favorite-icon hl5"></iconify-icon>
+              </button>
+              <button class="product__cart">
+                <span class="product__add-cart">
+                  加入購物車
+                </span>
+              </button>
+            </figure>
+            <div class="product__description">
+              <h3 class="product__title hl6">男士復古真皮錢包</h3>
+              <span class="product__price hl6">800</span>
+            </div>
+          </a>
+        </li>
+        <li class="product__item">
+          <a href="./product-detail.html" class="product__link">
+            <figure class="product__picture">
+              <img src="./image/long-wallet.png" alt="product image" class="product__image">
+              <button class="product__favorite">
+                <iconify-icon icon="mdi:heart-outline" class="product__favorite-icon hl5"></iconify-icon>
+              </button>
+              <button class="product__cart">
+                <span class="product__add-cart">
+                  加入購物車
+                </span>
+              </button>
+            </figure>
+            <div class="product__description">
+              <h3 class="product__title hl6">男士復古真皮錢包</h3>
+              <span class="product__price hl6">800</span>
+            </div>
+          </a>
+        </li>
+        <li class="product__item">
+          <a href="./product-detail.html" class="product__link">
+            <figure class="product__picture">
+              <img src="./image/long-wallet.png" alt="product image" class="product__image">
+              <button class="product__favorite">
+                <iconify-icon icon="mdi:heart-outline" class="product__favorite-icon hl5"></iconify-icon>
+              </button>
+              <button class="product__cart">
+                <span class="product__add-cart">
+                  加入購物車
+                </span>
+              </button>
+            </figure>
+            <div class="product__description">
+              <h3 class="product__title hl6">男士復古真皮錢包</h3>
+              <span class="product__price hl6">800</span>
+            </div>
+          </a>
+        </li>
+        <li class="product__item">
+          <a href="./product-detail.html" class="product__link">
+            <figure class="product__picture">
+              <img src="./image/long-wallet.png" alt="product image" class="product__image">
+              <button class="product__favorite">
+                <iconify-icon icon="mdi:heart-outline" class="product__favorite-icon hl5"></iconify-icon>
+              </button>
+              <button class="product__cart">
+                <span class="product__add-cart">
+                  加入購物車
+                </span>
+              </button>
+            </figure>
+            <div class="product__description">
+              <h3 class="product__title hl6">男士復古真皮錢包</h3>
+              <span class="product__price hl6">800</span>
+            </div>
+          </a>
+        </li>
+      </ul>
+      
+      <nav class="product__navigation">
+        <ul class="product__pagination">
+          <li class="product__pagination-item">
+            <a href="#" class="product__pagination-link product__pagination-prev">
+              <iconify-icon icon="mingcute:left-line" class="product__pagination-prev-icon hl4"></iconify-icon>
+            </a>
+          </li>
+          <li class="product__pagination-item">
+            <a href="#" class="product__pagination-link hl7">1</a>
+          </li>
+          <li class="product__pagination-item">
+            <a href="#" class="product__pagination-link hl7">2</a>
+          </li>
+          <li class="product__pagination-item">
+            <a href="#" class="product__pagination-link hl7">3</a>
+          </li>
+          <li class="product__pagination-item">
+            <a href="#" class="product__pagination-link product__pagination-next">
+              <iconify-icon icon="mingcute:right-line" class="product__pagination-next-icon hl4"></iconify-icon>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+  </main>
+
+
+  <footer class="main-footer">
+    <div class="container-large">
+      <div class="main-footer__wrap">
+        <nav class="main-footer__navbar">
+          <ul class="main-footer__nav-list">
+            <li class="main-footer__nav-item">
+              <a href="#" class="main-footer__nav-link hl6">常見問題</a>
+            </li>
+            <li class="main-footer__nav-item">
+              <a href="#" class="main-footer__nav-link hl6">品牌介紹</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="main-footer__terms">
+          <ul class="main-footer__terms-list">
+            <li class="main-footer__terms-item">
+              <a href="#" class="main-footer__terms-link hl6">隱私權政策</a>
+            </li>
+            <li class="main-footer__terms-item">
+              <a href="#" class="main-footer__terms-link hl6">免責政策</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="main-footer__wrap main-footer__wrap--down">
+        <small class="main-footer__copyright hl7">&copy; 2025 CarryWell. All rights reserved.</small>
+        <ul class="main-footer__follow-list">
+          <li class="main-footer__follow-item">
+            <a href="#" class="main-footer__follow-link">
+              <iconify-icon icon="skill-icons:github-dark" class="main-footer__icon hl5"></iconify-icon>
+            </a>
+          </li>
+          <li class="main-footer__follow-item">
+            <a href="#" class="main-footer__follow-link">
+              <iconify-icon icon="skill-icons:instagram" class="main-footer__icon hl5"></iconify-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
