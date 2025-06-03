@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/typography.css">
+  <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylesheet" href="./css/checkout.css">
+  <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
+</head>
+<body>
+  <header class="main-header">
+    <div class="container-large">
+      <h1 class="main-header__logo">
+        <a href="./index.html" class="main-header__logo-link hl2">CarryWell</a>
+      </h1>
+      <nav class="main-header__navbar">
+        <div class="main-header__menu">
+          <iconify-icon icon="material-symbols:menu" class="main-header__menu-icon hl3"></iconify-icon>
+        </div>
+        <ul class="main-header__nav-list">
+          <li class="main-header__nav-item">
+            <a href="./index.html" class="main-header__nav-link hl5">首頁</a>
+          </li>
+          <li class="main-header__nav-item">
+            <a href="./product.html" class="main-header__nav-link hl5">商品列表</a>
+          </li>
+          <li class="main-header__nav-item">
+            <a href="./about-us.html" class="main-header__nav-link hl5">品牌介紹</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="main-header__icon-list">
+        <li class="main-header__icon-item">
+          <a href="./favorite.html" class="main-header__icon-link">
+            <iconify-icon icon="mdi:heart-outline" class="main-header__icon hl5"></iconify-icon>
+          </a>
+        </li>
+        <li class="main-header__icon-item main-header__icon-item--active">
+          <a href="./cart.html" class="main-header__icon-link">
+            <iconify-icon icon="uil:cart" class="main-header__icon hl5"></iconify-icon>
+          </a>
+        </li>
+        <li class="main-header__icon-item">
+          <a href="./login.html" class="main-header__icon-link">
+            <iconify-icon icon="gg:profile" class="main-header__icon hl5"></iconify-icon>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="banner container-large">
+    <h2 class="banner__title hl2">Checkout</h2>
+  </div>
+  
+  <main class="checkout container">
+    <nav class="step">
+      <ul class="step__list">
+        <li class="step__item hl4">
+          <span class="step__number">1</span> 購物車
+        </li>
+        <li class="step__item step__item--active hl4">
+          <span class="step__number">2</span> 填寫資料
+        </li>
+        <li class="step__item hl4">
+          <span class="step__number">3</span> 完成訂單
+        </li>
+      </ul>
+    </nav>
+
+    <a href="./cart.html" class="checkout__back">
+      <iconify-icon icon="mingcute:left-line" class="checkout__back-icon hl5"></iconify-icon>
+      <span class="checkout__back-text hl5">返回購物車</span>
+    </a>
+      
+    <div class="checkout__wrap">
+      <section class="checkout__content">
+        <form class="form">
+          <h3 class="form__headline hl3">聯絡方式</h3>
+          <div class="form__wrap">
+            <input type="text" name="name" id="name" class="form__input" required>
+            <label for="name" class="form__title hl6">姓名</label>
+            <span class="form__error hl7">不能為空白！</span>
+          </div>
+          <div class="form__wrap">
+            <input type="text" name="email" id="email" class="form__input" required>
+            <label for="email" class="form__title hl6">電子郵件</label>
+            <span class="form__error hl7">不能為空白、必須包含 @ 符號！</span>
+          </div>
+          <div class="form__wrap">
+            <input type="tel" name="phone" id="phone" class="form__input" required>
+            <label for="phone" class="form__title hl6">電話號碼</label>
+            <span class="form__error hl7">不能為空白、必須為 10 字！</span>
+          </div>
+        </form>
+        <form class="form">
+          <h3 class="form__headline hl3">郵寄地址</h3>
+          <div class="form__wrap">
+            <input type="text" name="address" id="address" class="form__input" required>
+            <label for="address" class="form__title hl6">地址</label>
+            <span class="form__error hl7">不能為空白、必須在8字以上！</span>
+          </div>
+        </form>
+        <form class="form">
+          <h3 class="form__headline hl3">結帳方式</h3>
+          <label class="form__wrap-border" for="card">
+            <input type="radio" name="checkout" id="card" class="form__radio" checked>
+            <label for="card" class="hl6">信用卡</label>
+          </label>
+          <label class="form__wrap-border" for="cash">
+            <input type="radio" name="checkout" id="cash" class="form__radio">
+            <label for="cash" class="hl6">貨到付款</label>
+          </label>
+          <div class="form__wrap">
+            <input type="number" name="credit-car" id="credit-car" class="form__input" required>
+            <label for="credit-car" class="form__title hl6">信用卡卡號</label>
+            <span class="form__error hl7">不能為空白、必須在 15 字以上！</span>
+          </div>
+          <div class="form__container">
+            <div class="form__wrap">
+              <input type="number" name="expiration-date" id="expiration-date" class="form__input" required>
+              <label for="expiration-date" class="form__title hl6">有效日期</label>
+              <span class="form__error hl7">不能為空白、必須為 4 個字！</span>
+            </div>
+            <div class="form__wrap">
+              <input type="number" name="expiration-date" id="expiration-date" class="form__input" required>
+              <label for="expiration-date" class="form__title hl6">安全碼</label>
+              <span class="form__error hl7">不能為空白、必須為3個字！</span>
+            </div>
+          </div>
+        </form>
+      </section>
+
+      <aside class="cart__summary">
+        <h3 class="cart__summary-title hl5">訂單摘要</h3>
+        <ul class="cart__list">
+          <li class="cart__item">
+            <div class="cart__item-wrap">
+              <div class="cart__item-picture">
+                <img src="./image/long-wallet.png" alt="long wallet">
+              </div>
+              <div class="cart__item-content">
+                <h3 class="cart__item-name hl6">男士復古真皮錢包</h3>
+                <div class="cart__item-quantity">
+                  <button class="cart__quantity-button hl6">-</button>
+                  <input type="number" value="1" min="1" class="cart__quantity-input hl6">
+                  <button class="cart__quantity-button hl6">+</button>
+                </div>
+              </div>
+              <span class="cart__item-price hl6">800</span>
+            </div>
+          </li>
+          <li class="cart__item">
+            <div class="cart__item-wrap">
+              <div class="cart__item-picture">
+                <img src="./image/long-wallet.png" alt="long wallet">
+              </div>
+              <div class="cart__item-content">
+                <h3 class="cart__item-name hl6">男士復古真皮錢包</h3>
+                <div class="cart__item-quantity">
+                  <button class="cart__quantity-button hl6">-</button>
+                  <input type="number" value="1" min="1" class="cart__quantity-input hl6">
+                  <button class="cart__quantity-button hl6">+</button>
+                </div>
+              </div>
+              <span class="cart__item-price hl6">800</span>
+            </div>
+          </li>
+          <li class="cart__item">
+            <div class="cart__item-wrap">
+              <div class="cart__item-picture">
+                <img src="./image/long-wallet.png" alt="long wallet">
+              </div>
+              <div class="cart__item-content">
+                <h3 class="cart__item-name hl6">男士復古真皮錢包</h3>
+                <div class="cart__item-quantity">
+                  <button class="cart__quantity-button hl6">-</button>
+                  <input type="number" value="1" min="1" class="cart__quantity-input hl6">
+                  <button class="cart__quantity-button hl6">+</button>
+                </div>
+              </div>
+              <span class="cart__item-price hl6">800</span>
+            </div>
+          </li>
+        </ul>
+        <dl class="cart__summary-list">
+          <div class="cart__summary-item">
+            <dt class="cart__summary-label hl7">商品總計</dt>
+            <dd class="cart__summary-price hl7">800</dd>
+          </div>
+          <div class="cart__summary-item">
+            <dt class="cart__summary-label hl7">運費總計</dt>
+            <dd class="cart__summary-price hl7">0</dd>
+          </div>
+          <div class="cart__summary-item cart__summary-total">
+            <dt class="cart__summary-label hl6">總共金額</dt>
+            <dd class="cart__summary-price hl6">800</dd>
+          </div>
+        </dl>
+        <a class="cart__checkout hl5">前往結帳</a>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="main-footer">
+    <div class="container-large">
+      <div class="main-footer__wrap">
+        <nav class="main-footer__navbar">
+          <ul class="main-footer__nav-list">
+            <li class="main-footer__nav-item">
+              <a href="#" class="main-footer__nav-link hl6">常見問題</a>
+            </li>
+            <li class="main-footer__nav-item">
+              <a href="#" class="main-footer__nav-link hl6">品牌介紹</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="main-footer__terms">
+          <ul class="main-footer__terms-list">
+            <li class="main-footer__terms-item">
+              <a href="#" class="main-footer__terms-link hl6">隱私權政策</a>
+            </li>
+            <li class="main-footer__terms-item">
+              <a href="#" class="main-footer__terms-link hl6">免責政策</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="main-footer__wrap main-footer__wrap--down">
+        <small class="main-footer__copyright hl7">&copy; 2025 CarryWell. All rights reserved.</small>
+        <ul class="main-footer__follow-list">
+          <li class="main-footer__follow-item">
+            <a href="#" class="main-footer__follow-link">
+              <iconify-icon icon="skill-icons:github-dark" class="main-footer__icon hl5"></iconify-icon>
+            </a>
+          </li>
+          <li class="main-footer__follow-item">
+            <a href="#" class="main-footer__follow-link">
+              <iconify-icon icon="skill-icons:instagram" class="main-footer__icon hl5"></iconify-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
