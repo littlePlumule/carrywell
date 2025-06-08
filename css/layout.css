@@ -144,6 +144,17 @@ section.container > h2 {
   display: block;
 }
 
+.main-footer__icon {
+  color: var(--nobel);
+  transition: color .3s;
+}
+
+.main-footer__follow-item:hover .main-footer__icon {
+  color: var(--white);
+}
+
+
+
 /* banner */
 .banner {
   width: 100%;
