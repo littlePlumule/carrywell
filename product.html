@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./css/base.css">
   <link rel="stylesheet" href="./css/typography.css">
   <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylesheet" href="./css/components.css">
   <link rel="stylesheet" href="./css/product.css">
   <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
 </head>
@@ -58,29 +59,29 @@
   </div>
   
   <main class="product-container container">
-    <aside class="product-sidebar">
-      <h3 class="product-sidebar__title hl5">商品分類</h3>
-      <ul class="product-sidebar__list">
-        <li class="product-sidebar__item product-sidebar__item--active">
-          <a href="#" class="product-sidebar__link hl7">熱門商品</a>
+    <aside class="sidebar">
+      <h3 class="sidebar__title hl5">商品分類</h3>
+      <ul class="sidebar__list">
+        <li class="sidebar__item sidebar__item--active">
+          <a href="#" class="sidebar__link hl7">熱門商品</a>
         </li>
-        <li class="product-sidebar__item">
-          <a href="#" class="product-sidebar__link hl7">MEN</a>
+        <li class="sidebar__item">
+          <a href="#" class="sidebar__link hl7">MEN</a>
         </li>
-        <li class="product-sidebar__item">
-          <a href="#" class="product-sidebar__link hl7">WOMEN</a>
+        <li class="sidebar__item">
+          <a href="#" class="sidebar__link hl7">WOMEN</a>
         </li>
-        <li class="product-sidebar__item">
-          <a href="#" class="product-sidebar__link hl7">皮夾 / 短夾</a>
+        <li class="sidebar__item">
+          <a href="#" class="sidebar__link hl7">皮夾 / 短夾</a>
         </li>
-        <li class="product-sidebar__item">
-          <a href="#" class="product-sidebar__link hl7">皮夾 / 中夾</a>
+        <li class="sidebar__item">
+          <a href="#" class="sidebar__link hl7">皮夾 / 中夾</a>
         </li>
-        <li class="product-sidebar__item">
-          <a href="#" class="product-sidebar__link hl7">皮夾 / 長夾</a>
+        <li class="sidebar__item">
+          <a href="#" class="sidebar__link hl7">皮夾 / 長夾</a>
         </li>
-        <li class="product-sidebar__item">
-          <a href="#" class="product-sidebar__link hl7">零錢包</a>
+        <li class="sidebar__item">
+          <a href="#" class="sidebar__link hl7">零錢包</a>
         </li>
       </ul>
     </aside>
@@ -103,199 +104,256 @@
         </div>
       </header>
 
-      <ul class="product__list">
-        <li class="product__item">
-          <a href="./product-detail.html" class="product__link">
-            <figure class="product__picture">
-              <img src="./image/long-wallet.png" alt="product image" class="product__image">
-              <button class="product__favorite">
-                <iconify-icon icon="mdi:heart-outline" class="product__favorite-icon hl5"></iconify-icon>
+      <ul class="card__list">
+        <li class="card__item">
+          <a href="./product-detail.html" class="card__link">
+            <figure class="card__picture">
+              <img src="./image/long-wallet.png" alt="product image" class="card__image">
+              <button class="card__favorite">
+                <iconify-icon icon="mdi:heart-outline" class="card__favorite-icon hl5"></iconify-icon>
               </button>
-              <button class="product__cart">
-                <span class="product__add-cart">
+              <button class="card__cart">
+                <span class="card__add-cart">
                   加入購物車
                 </span>
               </button>
             </figure>
-            <div class="product__description">
-              <h3 class="product__title hl6">男士復古真皮錢包</h3>
-              <span class="product__price hl6">800</span>
+            <div class="card__description">
+              <h3 class="card__title hl6">男士復古真皮錢包</h3>
+              <span class="card__price hl6">800</span>
             </div>
           </a>
         </li>
-        <li class="product__item">
-          <a href="./product-detail.html" class="product__link">
-            <figure class="product__picture">
-              <img src="./image/long-wallet.png" alt="product image" class="product__image">
-              <button class="product__favorite">
-                <iconify-icon icon="mdi:heart-outline" class="product__favorite-icon hl5"></iconify-icon>
+        <li class="card__item">
+          <a href="./product-detail.html" class="card__link">
+            <figure class="card__picture">
+              <img src="./image/long-wallet.png" alt="product image" class="card__image">
+              <button class="card__favorite">
+                <iconify-icon icon="mdi:heart-outline" class="card__favorite-icon hl5"></iconify-icon>
               </button>
-              <button class="product__cart">
-                <span class="product__add-cart">
+              <button class="card__cart">
+                <span class="card__add-cart">
                   加入購物車
                 </span>
               </button>
             </figure>
-            <div class="product__description">
-              <h3 class="product__title hl6">男士復古真皮錢包</h3>
-              <span class="product__price hl6">800</span>
+            <div class="card__description">
+              <h3 class="card__title hl6">男士復古真皮錢包</h3>
+              <span class="card__price hl6">800</span>
             </div>
           </a>
         </li>
-        <li class="product__item">
-          <a href="./product-detail.html" class="product__link">
-            <figure class="product__picture">
-              <img src="./image/long-wallet.png" alt="product image" class="product__image">
-              <button class="product__favorite">
-                <iconify-icon icon="mdi:heart-outline" class="product__favorite-icon hl5"></iconify-icon>
+        <li class="card__item">
+          <a href="./product-detail.html" class="card__link">
+            <figure class="card__picture">
+              <img src="./image/long-wallet.png" alt="product image" class="card__image">
+              <button class="card__favorite">
+                <iconify-icon icon="mdi:heart-outline" class="card__favorite-icon hl5"></iconify-icon>
               </button>
-              <button class="product__cart">
-                <span class="product__add-cart">
+              <button class="card__cart">
+                <span class="card__add-cart">
                   加入購物車
                 </span>
               </button>
             </figure>
-            <div class="product__description">
-              <h3 class="product__title hl6">男士復古真皮錢包</h3>
-              <span class="product__price hl6">800</span>
+            <div class="card__description">
+              <h3 class="card__title hl6">男士復古真皮錢包</h3>
+              <span class="card__price hl6">800</span>
             </div>
           </a>
         </li>
-        <li class="product__item">
-          <a href="./product-detail.html" class="product__link">
-            <figure class="product__picture">
-              <img src="./image/long-wallet.png" alt="product image" class="product__image">
-              <button class="product__favorite">
-                <iconify-icon icon="mdi:heart-outline" class="product__favorite-icon hl5"></iconify-icon>
+        <li class="card__item">
+          <a href="./product-detail.html" class="card__link">
+            <figure class="card__picture">
+              <img src="./image/long-wallet.png" alt="product image" class="card__image">
+              <button class="card__favorite">
+                <iconify-icon icon="mdi:heart-outline" class="card__favorite-icon hl5"></iconify-icon>
               </button>
-              <button class="product__cart">
-                <span class="product__add-cart">
+              <button class="card__cart">
+                <span class="card__add-cart">
                   加入購物車
                 </span>
               </button>
             </figure>
-            <div class="product__description">
-              <h3 class="product__title hl6">男士復古真皮錢包</h3>
-              <span class="product__price hl6">800</span>
+            <div class="card__description">
+              <h3 class="card__title hl6">男士復古真皮錢包</h3>
+              <span class="card__price hl6">800</span>
             </div>
           </a>
         </li>
-        <li class="product__item">
-          <a href="./product-detail.html" class="product__link">
-            <figure class="product__picture">
-              <img src="./image/long-wallet.png" alt="product image" class="product__image">
-              <button class="product__favorite">
-                <iconify-icon icon="mdi:heart-outline" class="product__favorite-icon hl5"></iconify-icon>
+        <li class="card__item">
+          <a href="./product-detail.html" class="card__link">
+            <figure class="card__picture">
+              <img src="./image/long-wallet.png" alt="product image" class="card__image">
+              <button class="card__favorite">
+                <iconify-icon icon="mdi:heart-outline" class="card__favorite-icon hl5"></iconify-icon>
               </button>
-              <button class="product__cart">
-                <span class="product__add-cart">
+              <button class="card__cart">
+                <span class="card__add-cart">
                   加入購物車
                 </span>
               </button>
             </figure>
-            <div class="product__description">
-              <h3 class="product__title hl6">男士復古真皮錢包</h3>
-              <span class="product__price hl6">800</span>
+            <div class="card__description">
+              <h3 class="card__title hl6">男士復古真皮錢包</h3>
+              <span class="card__price hl6">800</span>
             </div>
           </a>
         </li>
-        <li class="product__item">
-          <a href="./product-detail.html" class="product__link">
-            <figure class="product__picture">
-              <img src="./image/long-wallet.png" alt="product image" class="product__image">
-              <button class="product__favorite">
-                <iconify-icon icon="mdi:heart-outline" class="product__favorite-icon hl5"></iconify-icon>
+        <li class="card__item">
+          <a href="./product-detail.html" class="card__link">
+            <figure class="card__picture">
+              <img src="./image/long-wallet.png" alt="product image" class="card__image">
+              <button class="card__favorite">
+                <iconify-icon icon="mdi:heart-outline" class="card__favorite-icon hl5"></iconify-icon>
               </button>
-              <button class="product__cart">
-                <span class="product__add-cart">
+              <button class="card__cart">
+                <span class="card__add-cart">
                   加入購物車
                 </span>
               </button>
             </figure>
-            <div class="product__description">
-              <h3 class="product__title hl6">男士復古真皮錢包</h3>
-              <span class="product__price hl6">800</span>
+            <div class="card__description">
+              <h3 class="card__title hl6">男士復古真皮錢包</h3>
+              <span class="card__price hl6">800</span>
             </div>
           </a>
         </li>
-        <li class="product__item">
-          <a href="./product-detail.html" class="product__link">
-            <figure class="product__picture">
-              <img src="./image/long-wallet.png" alt="product image" class="product__image">
-              <button class="product__favorite">
-                <iconify-icon icon="mdi:heart-outline" class="product__favorite-icon hl5"></iconify-icon>
+        <li class="card__item">
+          <a href="./product-detail.html" class="card__link">
+            <figure class="card__picture">
+              <img src="./image/long-wallet.png" alt="product image" class="card__image">
+              <button class="card__favorite">
+                <iconify-icon icon="mdi:heart-outline" class="card__favorite-icon hl5"></iconify-icon>
               </button>
-              <button class="product__cart">
-                <span class="product__add-cart">
+              <button class="card__cart">
+                <span class="card__add-cart">
                   加入購物車
                 </span>
               </button>
             </figure>
-            <div class="product__description">
-              <h3 class="product__title hl6">男士復古真皮錢包</h3>
-              <span class="product__price hl6">800</span>
+            <div class="card__description">
+              <h3 class="card__title hl6">男士復古真皮錢包</h3>
+              <span class="card__price hl6">800</span>
             </div>
           </a>
         </li>
-        <li class="product__item">
-          <a href="./product-detail.html" class="product__link">
-            <figure class="product__picture">
-              <img src="./image/long-wallet.png" alt="product image" class="product__image">
-              <button class="product__favorite">
-                <iconify-icon icon="mdi:heart-outline" class="product__favorite-icon hl5"></iconify-icon>
+        <li class="card__item">
+          <a href="./product-detail.html" class="card__link">
+            <figure class="card__picture">
+              <img src="./image/long-wallet.png" alt="product image" class="card__image">
+              <button class="card__favorite">
+                <iconify-icon icon="mdi:heart-outline" class="card__favorite-icon hl5"></iconify-icon>
               </button>
-              <button class="product__cart">
-                <span class="product__add-cart">
+              <button class="card__cart">
+                <span class="card__add-cart">
                   加入購物車
                 </span>
               </button>
             </figure>
-            <div class="product__description">
-              <h3 class="product__title hl6">男士復古真皮錢包</h3>
-              <span class="product__price hl6">800</span>
+            <div class="card__description">
+              <h3 class="card__title hl6">男士復古真皮錢包</h3>
+              <span class="card__price hl6">800</span>
             </div>
           </a>
         </li>
-        <li class="product__item">
-          <a href="./product-detail.html" class="product__link">
-            <figure class="product__picture">
-              <img src="./image/long-wallet.png" alt="product image" class="product__image">
-              <button class="product__favorite">
-                <iconify-icon icon="mdi:heart-outline" class="product__favorite-icon hl5"></iconify-icon>
+        <li class="card__item">
+          <a href="./product-detail.html" class="card__link">
+            <figure class="card__picture">
+              <img src="./image/long-wallet.png" alt="product image" class="card__image">
+              <button class="card__favorite">
+                <iconify-icon icon="mdi:heart-outline" class="card__favorite-icon hl5"></iconify-icon>
               </button>
-              <button class="product__cart">
-                <span class="product__add-cart">
+              <button class="card__cart">
+                <span class="card__add-cart">
                   加入購物車
                 </span>
               </button>
             </figure>
-            <div class="product__description">
-              <h3 class="product__title hl6">男士復古真皮錢包</h3>
-              <span class="product__price hl6">800</span>
+            <div class="card__description">
+              <h3 class="card__title hl6">男士復古真皮錢包</h3>
+              <span class="card__price hl6">800</span>
+            </div>
+          </a>
+        </li>
+        <li class="card__item">
+          <a href="./product-detail.html" class="card__link">
+            <figure class="card__picture">
+              <img src="./image/long-wallet.png" alt="product image" class="card__image">
+              <button class="card__favorite">
+                <iconify-icon icon="mdi:heart-outline" class="card__favorite-icon hl5"></iconify-icon>
+              </button>
+              <button class="card__cart">
+                <span class="card__add-cart">
+                  加入購物車
+                </span>
+              </button>
+            </figure>
+            <div class="card__description">
+              <h3 class="card__title hl6">男士復古真皮錢包</h3>
+              <span class="card__price hl6">800</span>
+            </div>
+          </a>
+        </li>
+        <li class="card__item">
+          <a href="./product-detail.html" class="card__link">
+            <figure class="card__picture">
+              <img src="./image/long-wallet.png" alt="product image" class="card__image">
+              <button class="card__favorite">
+                <iconify-icon icon="mdi:heart-outline" class="card__favorite-icon hl5"></iconify-icon>
+              </button>
+              <button class="card__cart">
+                <span class="card__add-cart">
+                  加入購物車
+                </span>
+              </button>
+            </figure>
+            <div class="card__description">
+              <h3 class="card__title hl6">男士復古真皮錢包</h3>
+              <span class="card__price hl6">800</span>
+            </div>
+          </a>
+        </li>
+        <li class="card__item">
+          <a href="./product-detail.html" class="card__link">
+            <figure class="card__picture">
+              <img src="./image/long-wallet.png" alt="product image" class="card__image">
+              <button class="card__favorite">
+                <iconify-icon icon="mdi:heart-outline" class="card__favorite-icon hl5"></iconify-icon>
+              </button>
+              <button class="card__cart">
+                <span class="card__add-cart">
+                  加入購物車
+                </span>
+              </button>
+            </figure>
+            <div class="card__description">
+              <h3 class="card__title hl6">男士復古真皮錢包</h3>
+              <span class="card__price hl6">800</span>
             </div>
           </a>
         </li>
       </ul>
       
-      <nav class="product__navigation">
-        <ul class="product__pagination">
-          <li class="product__pagination-item">
-            <a href="#" class="product__pagination-link product__pagination-prev">
-              <iconify-icon icon="mingcute:left-line" class="product__pagination-prev-icon hl4"></iconify-icon>
+      <nav class="pagination">
+        <ul class="pagination__list">
+          <li class="pagination__item">
+            <a href="#" class="pagination__link pagination__prev">
+              <iconify-icon icon="mingcute:left-line" class="pagination__prev-icon hl4"></iconify-icon>
             </a>
           </li>
-          <li class="product__pagination-item">
-            <a href="#" class="product__pagination-link hl7">1</a>
+          <li class="pagination__item">
+            <a href="#" class="pagination__link hl7">1</a>
           </li>
-          <li class="product__pagination-item">
-            <a href="#" class="product__pagination-link hl7">2</a>
+          <li class="pagination__item">
+            <a href="#" class="pagination__link hl7">2</a>
           </li>
-          <li class="product__pagination-item">
-            <a href="#" class="product__pagination-link hl7">3</a>
+          <li class="pagination__item">
+            <a href="#" class="pagination__link hl7">3</a>
           </li>
-          <li class="product__pagination-item">
-            <a href="#" class="product__pagination-link product__pagination-next">
-              <iconify-icon icon="mingcute:right-line" class="product__pagination-next-icon hl4"></iconify-icon>
+          <li class="pagination__item">
+            <a href="#" class="pagination__link pagination__next">
+              <iconify-icon icon="mingcute:right-line" class="pagination__next-icon hl4"></iconify-icon>
             </a>
           </li>
         </ul>

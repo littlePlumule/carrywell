@@ -1,4 +1,12 @@
 /* product */
+.product-container,
+.favorite-container {
+  display: flex;
+  justify-content: space-between;
+  margin-block: var(--xxl);
+  position: relative;
+}
+
 .product {
   flex-grow: 1;
 }
@@ -62,11 +70,4 @@
 .product__sort-option-item:hover {
   background-color: var(--regal-blue);
   color: var(--white)
-}
-
-.product__list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 262px);
-  gap: var(--xxl) var(--l);
-  justify-content: space-around;
 }

@@ -1,4 +1,11 @@
 /* product detail */
+.product-container {
+  display: flex;
+  justify-content: space-between;
+  margin-block: var(--xxl);
+  position: relative;
+}
+
 .product-detail {
   width: 100%;
 }
